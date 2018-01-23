@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+#wrapper {
+    background-color: rgb(193, 212, 236);
+    float: inherit;
+    width: 900px;
+    /* width can either be hardcoded in pixel or softcoded in % float: auto center*/
+    position: relative;
+    margin: 0 auto 0 auto 0;
+    /* CSS margins */   
+}
+h1, h2, h3 {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    line-height: 12px;
+    color: black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: olivedrab;
+    text-decoration: underline;
+}
+nav{
+    width: auto;
+    height: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background-color: coral;
+    padding: 10px 0px 5px 10px;
+
+}
+nav a{
+    /* nested stylesheet */
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+header{
+    width: 900px;
+    height: auto;
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 20px 0px 5px 5px;
+}
+article {
+    float: left;
+    width: 600px;
+    background-color: rgb(193, 212, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+    padding: 5px 5px 5px 5px;
+}
+aside{
+    float: right;
+    width: 200px;
+    height: auto;
+    background-color: rgb(143, 202, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    color: yellow;
+    padding: 25px 25px 25px 25px;
+    line-height: 30px;
+    height: auto;
+}
+footer{
+    clear: both;
+    /* clear both: footer will go to the next line automatically if there is too much data on top row */
+    width: 900px;
+    height: 30px;
+    background-color: lightcoral;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+    padding: 10px 0px 10px 10px
+}
+
+/* contact.html */
+*:focus {
+    outline: none;
+}
+
+/* form typograph */
+.contact_form h2, .contact_form label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact_form u1 {
+    width: 100%;
+    list-style-type: none;
+    list-style-position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact_form li {
+    padding: 12px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+.contact_form h2 {
+    margin: 0;
+    display: inline;
+}
+.notification {
+    color: grey;
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+}
+
+.contact_form label {
+    width: 80px;
+    margin-top: 5px;
+    display: inline-block;
+    float: left;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.contact_form input {
+    height: 25px;
+    width: 200px;
+    padding: 5px 5px;
+}
+
+.contact_form textarea {
+    width: 300px;
+    padding: 5px 5px;
+}
+
+.contact_form button{
+    margin-left: 10px;
+}
+
+.contact_form input, .contact_form textarea {
+    border: 1px solid olive;
+    box-shadow: 0px 0px 3px slategrey, 0 10px 30px slategrey inline; 
+    border-radius: 2px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+    background-color: white;
+    border: 2px solid green;
+    box-shadow: 0 0 3px rgb(204, 126, 70);
+    padding-right: 40px;
+}
+.contact_form input:required, .contact_form textarea:required {
+    background: #fff url('../Images/red_asterisk.png') no-repeat 98% center;
+}
+
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+    background: #fff url('../Images/invalid.png') no-repeat 98% center;
+    box-shadow: 0 0 5px red;
+    border-color: salmon;
+}
+
+.contact_form input:focus:valid, .contact_form textarea:focus:valid {
+    background: #fff url('../Images/valid.png') no-repeat 98% center;
+    box-shadow: 0 0 5px white;
+    border-color: green;
+}
+
+.form_hint {
+    background: rgb(193, 212, 236);
+    border-radius: 3px 3px 3px 3px;
+    color: blue;
+    margin-left: 10px;
+    padding: 1px, 6px;
+    position: absolute;
+}
+
+.form_hint::before {
+    content: "\25C0";
+    color: rgb(193, 212, 236); 
+    position: absolute;
+    left: -25px;
+}
+.contact_form input:focus + .form_hint {
+    display: inline;
+}
+.contact_form input:required:valid + .form_hint {
+    background: green;
+}
+.contact_form input:required:valid + .form_hint::before {
+    color: olive;
+}
+button.submit {
+    background-color: turquoise;
+    border: 2px solid teal;
+    border-bottom: 1px solid teal;
+    border-radius: 3px;
+    box-shadow: insert 0 1px 0 0 teal;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px; 20px;
+}
+
+button.submit:hover {
+    opacity: 55;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 2px solid teal;
+    box-shadow: 0 0 5px 5px turquoise;
+
+}

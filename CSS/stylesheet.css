@@ -1,0 +1,88 @@
+.container{
+    width: 80%;
+    margin: 120px auto;
+}
+.div1{
+    float: left;
+    width: 98%;
+    height: 90px;
+    margin: 5px 5px 5px 5px;
+    outline: 1px solid blue;
+}
+.div2{
+    float: left;
+    width: 48%;
+    height: 290px;
+    margin: 5px 5px 5px 5px;
+    outline: 1px solid olive;
+}
+.div3{
+    float: left;
+    width: 48%;
+    height: 140px;
+    margin: 5px 5px 5px 5px;
+    outline: 1px solid olive;
+}
+.div4{
+    float: left;
+    width: 48%;
+    height: 140px;
+    margin: 5px 5px 5px 5px;
+    outline: 1px solid olive;
+}
+.div5{
+    float: left;
+    width: 98%;
+    height: 90px;
+    margin: 5px 5px 5px 5px;
+    outline: 1px solid maroon;
+}
+
+/* sample 02.html*/
+
+header{
+    padding: 0px;
+    text-align: center;
+    background-color: lightblue;
+}
+nav{
+    
+    text-align: center;
+    background-color: cyan;
+    height: 30px;
+}
+ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+article{
+    padding: 1px;
+    border: dotted 3px purple;
+    margin-top: 5px;
+    background-color: skyblue;
+}
+aside{
+    padding: 5px;
+    border: double 5px indigo;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    background-color: palegoldenrod;
+}
+aside h1{
+    text-align: center;
+}
+section{
+    background-color: blue;
+    margin-top: 10px;
+    border: dashed 2px gold;
+}
+footer{
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}

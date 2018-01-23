@@ -1,0 +1,26 @@
+h1{
+    font-family: "Courier";
+    font-weight: bold;
+    font-size: 40 px;
+    background-color: black;
+    color: white
+}
+
+.writer{
+    font-family: "Courier";
+    font-style: italic;
+    font-size: 10 px;
+    background-color: white;
+    color: red
+}
+.content{
+    font-family: "Courier";
+    font-size: 30 px; 
+    background-color: black;
+    color: white;
+}
+span{
+    font-style: italic;
+    font-size: 30 px;
+    color: blue;
+}
