@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Bootstrap Walkthrough">
+        <meta name="keywords" content="HTML,CSS,XML,Javascript,Bootstrap">
+        <meta name="author" content="Cynthia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My First Bootstrap Page</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- fontawesome.io -->
+        <script src="https://use.fontawesome.com/e35307dda1.js"></script>
+        
+        <script>
+                $(document).ready(function(){
+                    $('[data-toggle="tooltip"]').tooltip(); 
+                });
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron">
+            <h1>My First Bootstrap Page</h1> 
+            </div>
+            <div class="page-header">
+            <p>This is some text.</p> 
+            </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Navigation Bar</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <!-- class=active: selected tab on this page -->
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+                <div id="navbar" class="navbar-collapse collapse">
+                <!-- navbar collapse is to condense the search bar as web window becomes smaller -->
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-default">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div style="padding: 10px 10px 10px 10px; float: left; width: 80%;">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox">Remember me</label>
+                        </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 text-center">
+                    <h1>
+                        About Myself
+                    </h1>
+                    <hr>
+                    <p>
+                        Coastal areas should be managed in a sustainable manner, which means development that should not compromise the quality of the environment for present and future generations. 
+                        For example, for the restoration of a sandy beach to be managed sustainably, measures should be put in place so that little or no deterioration should occur after restoration.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <div class="col-xs-12 col-md-4">
+                        <h2>Heading</h2>
+                        <p>
+                            Coastal areas should be managed in a sustainable manner, which means development that should not compromise the quality of the environment for present and future generations. 
+                            For example, for the restoration of a sandy beach to be managed sustainably, measures should be put in place so that little or no deterioration should occur after restoration.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">View details &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+                    <div class="col-xs-12 col-md-4">
+                        <h2>Heading</h2>
+                        <p>
+                            Coastal areas should be managed in a sustainable manner, which means development that should not compromise the quality of the environment for present and future generations. 
+                            For example, for the restoration of a sandy beach to be managed sustainably, measures should be put in place so that little or no deterioration should occur after restoration.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">View details &raquo;</a>
+                        </p>
+                    </div>
+                <div>
+                    <div class="col-xs-12 col-md-4">
+                        <h2>Heading</h2>
+                        <p>
+                            Coastal areas should be managed in a sustainable manner, which means development that should not compromise the quality of the environment for present and future generations. 
+                            For example, for the restoration of a sandy beach to be managed sustainably, measures should be put in place so that little or no deterioration should occur after restoration.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">View details &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4 panel panel-default">
+                    <h3 class="text-center">Operating Hours</h3>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Monday to Thursday
+                                </td>
+                                <td>
+                                    0900-1700 hrs
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Friday
+                                </td>
+                                <td>
+                                    1100-1500 hrs
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Saturday and Sunday
+                                </td>
+                                <td>
+                                    Closed
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 col-mid-4">
+                    <div class="embed-responsive embed-responsive-4by3">   
+                        <iframe src="https://goo.gl/KUBB7L" class="responsive-embed"></iframe>"
+                    </div>
+                <div class="col-xs-12 col-md-4">
+                        <h3> Check me out </h3>
+                        <br>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item"><i class="fa fa-envelope" aria-hidden="true"></i> contactus@abc.com</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-telegram" aria-hidden="true"></i> contactusnus</a>
+                            <a href="#" class="list-group-item"><i class="fa fa-mobile" aria-hidden="true"></i> 6456-1111</a>
+                        </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com" data-toggle="tooltip" title="Hooray Facebook!">
+                                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com"data-toggle="tooltip" title="Hooray Instagram!">
+                                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-google fa-3x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-snapchat fa-3x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="text-center">
+        Copyright &copy; 2018
+    </footer>
+</html
