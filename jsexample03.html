@@ -1,0 +1,66 @@
+<!doctype.html>
+<html>
+    <head>
+        <script lang="javascript" type="text/javascript">
+        //t is in milli second, location.reload(true) can be any function e.g. getdata()
+        function autoRefresh(t) {
+            setTimeout("location.reload(true);", t);
+        }
+
+        function redirectPage() {
+            window.location = "https://www.google.com";
+        }
+        </script>
+    </head>
+    <body onload="javascript:autoRefresh(5000);">
+        <script lang="javascript" type="text/javascript">
+        
+        var employee = {
+            name : "James",
+            email : "james@cook.com",
+            tel : "9999999"
+        }
+
+        var employeelist = [
+            {
+            name : "James",
+            email : "james@cook.com",
+            tel : "9999999"
+            },
+            {
+            name : "Mark",
+            email : "mark@cook.com",
+            tel : "8888888"
+            },
+            {
+            name : "Lee",
+            email : "lee@cook.com",
+            tel : "7777777"
+            }
+        ]
+
+        document.write("Size of employeelist: " + employeelist.length);
+
+        document.write("<br>");
+        document.write("<table border = 1 width=80%>");
+            document.write("<thead>");
+            document.write("<tr>");
+            document.write("<th>" + employeelist.keys[0] + "</th>");
+            document.write("<th>" + employeelist.keys[1] + "</th>");
+            document.write("<th>" + employeelist.keys[2] + "</th>");
+            document.write("</thead>");
+            document.write("</tr>");
+        for(var i = 0; i < employeelist.length; i++) {
+            document.write("<tr>");
+            document.write("<td>" + employeelist[i].name + "</td>");
+            document.write("<td>" + employeelist[i].email + "</td>");
+            document.write("<td>" + employeelist[i].tel + "</td>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        </script>
+
+        //refresh page
+        <a href="javascript:location.reload(true)">Refresh Page</a>
+    </body>
+</html>
