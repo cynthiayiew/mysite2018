@@ -32,7 +32,7 @@ body{
 
 .Inner-page{
     width: 80%;
-    height: 500px;
+    height: 600px;
     margin-top: 50px;
     background-color: white;
     margin-left: 100px;
@@ -41,8 +41,6 @@ body{
 }
 
 .me{
-    padding-right: 200px;
-    padding-left: 200px;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -95,9 +93,9 @@ body{
 }
 
 .sidebar{
-    margin-top: -10px;
+    /* margin-top: -10px;
     margin-left: -30px;
-    margin-right: 10px;
+    margin-right: 10px; */
     height: 400px;
     background-color: rgb(255, 255, 220);
 }
@@ -134,8 +132,8 @@ body{
 .form-group{
     background-color: rgba(25, 162, 180, 0.507);
     opacity: 0.8;
-    height: 370px;
-    margin-right: 10px;
+    height: 350px;
+    /* margin-right: 10px; */
     padding-top: 30px;
 }
 
