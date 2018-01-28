@@ -1,0 +1,158 @@
+body {
+    background: rgb(236, 251, 253);
+}
+
+.background {
+    width: 300px;
+    height: 400px;
+    background: rgb(163, 229, 238);
+    border-color: black;
+    margin: 50px auto;
+}
+
+button {
+    border: 0;
+    color: black;
+}
+
+#result {
+    display: block;
+    width: 250px;
+    height: 40px;
+    text-align: right;
+    margin: 10px auto;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#result:hover {
+    cursor: text;
+}
+
+#border-row {
+    height: 15px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+}
+
+#first-row {
+    margin-bottom: 15px;
+    position: relative;
+    top: 15px;
+}
+
+.rows {
+    width: 300px;
+    margin-top: 10px;
+}
+
+#delete {
+    width: 113px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.btn-style {
+    width: 50px;
+    border-radius: 5px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.first-child {
+    margin-left: 25px;
+}
+
+.number-background {
+    background-color:rgb(236, 30, 157);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.number-background:active {
+    background-color:rgb(236, 30, 157);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    box-shadow: inset 3px 3px 3px rgb(236, 104, 186);
+}
+
+.operator-background {
+    background-color:rgb(235, 127, 195);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.operator-background:active {
+    background-color:rgb(235, 127, 195);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    box-shadow: inset 3px 3px 3px rgb(240, 175, 215);
+}
+
+.delete-background {
+    background-color:rgb(235, 127, 195);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.delete-background:active {
+    background-color:rgb(235, 127, 195);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    box-shadow: inset 3px 3px 3px rgb(240, 175, 215);
+}
+
+.equal-background {
+    background-color:rgb(235, 127, 195);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.equal-background:active {
+    background-color:rgb(235, 127, 195);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    box-shadow: inset 3px 3px 3px rgb(240, 175, 215);
+}
+
+/*align add and equal buttons to the right*/
+.align {
+    margin-left: 10px;
+}
+
+.fall-back {
+    margin-left: 10px;
+}
