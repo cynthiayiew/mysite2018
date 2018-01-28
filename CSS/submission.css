@@ -35,8 +35,9 @@ body{
     height: 600px;
     margin-top: 50px;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+    float: center;
+    /* margin-left: 100px;
+    margin-right: 100px; */
     border-radius: 5px;
 }
 
